@@ -40,7 +40,7 @@
       <HintPath>..\packages\AsyncIO.0.1.26.0\lib\net40\AsyncIO.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Konsole, Version=2.0.2.41537, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Konsole, Version=2.0.2.13965, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\konsole\Konsole\bin\Debug\Konsole.dll</HintPath>
     </Reference>
@@ -63,9 +63,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chapter1\Demo1.cs" />
+    <Compile Include="Chapter1\AnimalClient.cs" />
+    <Compile Include="KeyHandler.cs" />
+    <Compile Include="Chapter1\Program.cs" />
+    <Compile Include="RequestEcho.cs" />
+    <Compile Include="ResponseEcho.cs" />
+    <Compile Include="Chapter1\Server.cs" />
+    <Compile Include="MicroService.cs" />
+    <Compile Include="RequestSocketMicroService.cs" />
+    <Compile Include="Demo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResponseSocketMicroService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -73,6 +82,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Chapter2\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

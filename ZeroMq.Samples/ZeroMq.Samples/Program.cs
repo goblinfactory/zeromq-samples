@@ -1,21 +1,15 @@
 ﻿using System;
-using Konsole;
-using Konsole.Drawing;
 using Konsole.Menus;
-using ZeroMq.Samples.Chapter1;
-
 
 namespace ZeroMq.Samples
 {
-    partial class Program
+    class Program
     {
-
         static void Main(string[] args)
         {
-
             var menu = new Menu("Zeromq demos", ConsoleKey.Escape, 60,
 
-                new MenuItem('1', "send and recieve strings", Demo1.Run)
+                new MenuItem('1', "Chapter 1) send and recieve strings", Chapter1.Program.Run)
             
             );
             menu.OnBeforeMenuItem += m => Console.Clear();
@@ -23,6 +17,7 @@ namespace ZeroMq.Samples
             menu.Run();
 
         }
+
     }
 }
 
